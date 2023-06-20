@@ -5,7 +5,7 @@ import { useContext } from 'react';
 import { AuthContext } from '../provider/AuthProvider';
 
 const axiosSecure = axios.create({
-    baseURL: 'http://localhost:5000',
+    baseURL: 'https://bistro-boss-server-gilt-gamma.vercel.app',
 });
 
 const useAxiosSecure = () => {

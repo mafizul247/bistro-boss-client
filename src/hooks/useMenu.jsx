@@ -6,7 +6,7 @@ const useMenu = () => {
     // const [loading, setLoading] = useState(true);
 
     // useEffect(() => {
-    //     fetch('http://localhost:5000/menus')
+    //     fetch('https://bistro-boss-server-gilt-gamma.vercel.app/menus')
     //         .then(res => res.json())
     //         .then(data => {
     //             setMenu(data);
@@ -17,7 +17,7 @@ const useMenu = () => {
     const {data: menu = [], isLoading: loading, refetch} = useQuery({
         queryKey: ['menus'],
         queryFn: async() => {
-            const res = await fetch('http://localhost:5000/menus');
+            const res = await fetch('https://bistro-boss-server-gilt-gamma.vercel.app/menus');
             return res.json();
         }
     })

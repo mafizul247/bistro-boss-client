@@ -46,7 +46,7 @@ const AuthProvider = ({ children }) => {
             // console.log(currentUser, 'Current User');
 
             if (currentUser) {
-                axios.post('http://localhost:5000/jwt', { email: currentUser.email })
+                axios.post('https://bistro-boss-server-gilt-gamma.vercel.app/jwt', { email: currentUser.email })
                 .then(data => {
                     // console.log(data);
                     const accessToken = data.data.token;

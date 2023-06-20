@@ -91,7 +91,7 @@ const CheckoutForm = ({ cart, price }) => {
             axiosSecure.post('/payments', payment)
                 .then(res => {
                     console.log(res.data);
-                    if (res.data.result.insertedId) {
+                    if (res.data.insertResult.insertedId) {
                         // display confirm
                     }
                 })
